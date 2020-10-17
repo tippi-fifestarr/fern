@@ -1,0 +1,63 @@
+.header {
+  background-color: rgb(173, 173, 173);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column-reverse; */
+}
+/* animate an effect when the new data goes in header, move the title and otherthing. */
+
+.hero-select-cards-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hero-card{
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+  width: 200px;
+}
+
+.image-box{
+  width: 100px;
+}
+.image-box img{
+  width: 100%;
+}
+
+
+
+.table-container{
+  display: flex;
+}
+.card-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card{
+  border: 1px solid black;
+  width: 20vw;
+  height: 200px;
+  margin: 9px;
+}
+
+
+
+
+
+
+
+
+
+.flipped{
+  background-color: black;
+}
+
+.hide{
+    display:none;
+}
+.chosen{
+  border: 2px dashed gold ;
+}

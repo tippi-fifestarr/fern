@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+  <div class="header">
+    <h1>Blopty Bloop</h1>
+    <p>A game of mystery and intrigue.</p>
+  </div>
+
+  <div id="start" class="scene start">
+    <h2>Are you ready to have some feeerrrrnnnnnn?!</h2>
+    <p>Choose a character and try to capture all of the cards! (or something, we don't know the actual rules yet)</p>
+    <button onclick="handleStartBtn()">START NOW GUY</button>
+  </div>
+
+  <div id="hero-select" class="scene hero-select hide">
+    <h2>Choose a hero</h2>
+    <div class="hero-select-cards-container">
+      <!-- place hero cards in here -->
+    </div>
+    <button onclick="handleHeroSelectBtn()">Are you suresies?</button>
+  </div>
+
+  <div id="playing-board" class="scene playing-board hide">
+    <div class="table-container">
+      <div class="hero-container">
+        <div class="image-box">
+          <img src="../DaDeuce/images/dalogo.jpg" alt="DaDeuce">
+        </div>
+        <div class="attributes-box">
+          <p class="hero-name"></p>
+          <p class="hero-hp"></p>
+          <p class="hero-dmg"></p>
+          <p class="hero-cost"></p>
+          <p class="hero-cost-qty"></p>
+          <p class="hero-bonus"></p>
+        </div>
+        .loot
+      </div>
+      <div class="cards-grid-container">
+        <div class="dadeck">
+          <!-- this is where the shuffled cards are waiting to be dealt -->
+        </div>
+        <div class="card-grid">
+          <!-- cards dynamically placed in here, face down -->
+        </div>
+      </div>
+      <div class="question-container">
+        <!-- questions for player will be dynamically placed here -->
+      </div>
+    </div>
+  </div>
+  <script src="heroes.js"></script>
+  <script src="gear.js"></script>
+  <script src="elements.js"></script>
+  <script src="npc.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
