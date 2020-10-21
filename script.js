@@ -1,13 +1,17 @@
+// create an empty object (bc=?) THIS IS OUR "PLAYER"
 const heroStats = {
 }
 
+// this is the first scene, add/remove"hide" as appropriate
 function handleStartBtn(){
   // hide the start div
   document.getElementById("start").classList.add("hide")
   // show the hero select div
   document.getElementById("hero-select").classList.remove("hide")
+  // this creates html elements based on heroes.js
   heroCardCreate();
 }
+
 function handleHeroSelectBtn(){
   // hide the start div, by adding hide
   document.getElementById("hero-select").classList.add("hide")
@@ -15,27 +19,42 @@ function handleHeroSelectBtn(){
   document.getElementById("playing-board").classList.remove("hide")
   createPlayingBoard()
 }
-
+// haven't read yet
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+// awesome article, dan quiz me about this, give me 1-5 stars
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+// map object holds key-value pairs and remembers insertion order of keys
+// Any value (both objects and p r i m i t i v e values) may be used as either a key or a value.
 function heroCardCreate(){
-heroesArr.map(hero => {
-  const {id, name, hp, dmg, cost, bonus} = hero;
-  const heroCard = document.createElement("div")
-  heroCard.id = `${name}`
-  heroCard.innerHTML = `
-  <h2> ${name} </h2>
-  <p> hp: ${hp} </p>
-  <p> dmg ${dmg} </p>
-  <p> cost: ${cost.qty} ${cost.element} </p>
-  <p> bonus: ${bonus} </p>
-  `
-  heroCard.classList.add('hero-card')
-  heroCard.classList.add(`hero${id}`)
-
-  heroCard.onclick = function(){handleChooseHero(id, name, hp, dmg, cost.qty, cost.element, bonus)}
-  document.querySelector('.hero-select-cards-container').appendChild(heroCard)
-})
+  // we are mapping from heroesArr (created in the heroes.js) into hero (key value pairs)
+  heroesArr.map(hero => {
+    // in swell foop, declare OBJECT DESTRUCTURING
+    const {id, name, hp, dmg, cost, bonus} = hero;
+    // this is the card div, the card itself one could say.
+    const heroCard = document.createElement("div")
+    // in javascript, id is like "name"
+    heroCard.id = `${name}`
+    // now we are filling the HTML in another feel swoop! ` c o  o   l` 
+    heroCard.innerHTML = `
+    <h2> ${name} </h2>
+    <p> hp: ${hp} </p>
+    <p> dmg ${dmg} </p>
+    <p> cost: ${cost.qty} ${cost.element} </p>
+    <p> bonus: ${bonus} </p>
+    `
+    // give it some class
+    heroCard.classList.add('hero-card')
+    // id is the sequential number dan added to the heroes.js to help identify this. 
+    heroCard.classList.add(`hero${id}`)
+  // on the click, add a function (and give these arguments)
+    heroCard.onclick = function(){
+      handleChooseHero(id, name, hp, dmg, cost.qty, cost.element, bonus)
+    }
+    // and append the card
+    document.querySelector('.hero-select-cards-container').appendChild(heroCard)
+  })
 }
-
+//adding the hero data to "state"
 function handleChooseHero(id, name, hp, dmg, costQty, costElement, bonus){
   heroStats.name = name
   heroStats.hp = hp
@@ -84,9 +103,20 @@ function displayDeck(deck){
     cardEl.classList.add(`flipped`)
     cardEl.innerHTML = `
       <h1>${card.name}</h1>
+      <i class="zoom-icon zoom-icon-${card.id} fas fa-search"></i>
     `
+    cardEl.onclick = function(){
+      cardEl.classList.remove(`flipped`)
+    }
     document.querySelector('.card-grid').appendChild(cardEl)
   })
+  for(i = 0; i < deck.length; i++){
+    Array.from(document.querySelectorAll('.zoom-icon')).forEach(element => {
+      if(element.classList[1] == `zoom-icon-${deck[i].id}`){
+        element.addEventListener('click', function(){cardZoom(deck[i])})
+      }
+    });
+  }
 }
 
 function buildDeck(){
@@ -119,10 +149,9 @@ function shuffle(array) {
   return array
 }
 
+// selectorbox (and delete the imprint)
 function findChosenHero(id){
   // checkherostat for hero name and then loop through hero options find the corresponding card by name
-  // select that one ()
-  console.log(typeof(heroesArr))
   for(var i = 0; heroesArr.length; i++){
     if (id == heroesArr[i].id){
       document.querySelector(`.hero${id}`).classList.add('chosen')
@@ -132,3 +161,17 @@ function findChosenHero(id){
   }
   console.log(heroStats.name)
 }
+
+// naming card into cardData or DETAILS
+function cardZoom(cardData){
+  //check if drawer is open or closed
+  document.querySelector('.drawer-container').classList.remove('drawer-container-closed')
+  console.log(cardData)
+  
+}
+
+// toggleDrawerBtn triggers "change text to close"
+function toggleDrawer(){
+  document.querySelector('.drawer-container').classList.toggle('drawer-container-closed')
+}
+document.querySelector('.toggleDrawerBtn').addEventListener("click", toggleDrawer)

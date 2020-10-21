@@ -1,5 +1,6 @@
 const npcArr = [
   {
+    "id" : "npc-1",
     "name" : "Bad Rat(s)",
     "hp" : 18,
     "dmg" : 8,
@@ -12,6 +13,7 @@ const npcArr = [
     
   },
   {
+    "id" : "npc-2",
     "name" : "Ratpack Boss",
     "hp" : 33,
     "dmg" : 9,
@@ -23,6 +25,7 @@ const npcArr = [
     "bonus" : "summonRat"
   },
   {
+    "id" : "npc-3",
     "name" : "sleeping tiger",
     "hp" : 69,
     "dmg" : 21,
@@ -33,6 +36,7 @@ const npcArr = [
     "bonus" : "hpBoost"
   },
   {
+    "id" : "npc-4",
     "name" : "ghost of gund",
     "hp" : 22,
     "dmg" : 110,

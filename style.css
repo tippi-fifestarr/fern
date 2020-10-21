@@ -28,7 +28,9 @@
 }
 
 
-
+.playing-board{
+  position: relative;
+}
 .table-container{
   display: flex;
 }
@@ -42,6 +44,28 @@
   height: 200px;
   margin: 9px;
 }
+
+
+.toggleDrawerBtn{
+  padding: 5px 10px;
+}
+.drawer-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 200px;
+  background: rgb(209, 209, 209);
+  z-index: 10;
+}
+.drawer-container-closed {
+  bottom: -170px;
+}
+
+
+
+
+
 
 
 

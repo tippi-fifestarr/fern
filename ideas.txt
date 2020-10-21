@@ -1,0 +1,36 @@
+
+Any value (both objects and primitive values) may be used as either a key or a value.
+primitive values scene
+$string, number, bigint, boolean, undefined, and symbol
+In JavaScript, a primitive (primitive value, primitive data type) is 
+data that is not an object and has no methods. There are 6 primitive data types:
+. . . 
+There also is null, which is seemingly primitive, but indeed is a special case for 
+every Object: and any structured type is derived from null by the Prototype Chain.
+
+Most of the time, a primitive value is represented directly
+at the lowest level of the language implementation.
+
+All primitives are immutable, i.e., they cannot be altered. 
+It is important not to confuse a primitive itself with a variable
+assigned a primitive value. The variable may be reassigned a new value,
+but the existing value can not be changed in the ways that 
+objects, arrays, and functions 
+can be altered.
+
+i m m u t a b l e: missions (0)
+0-null: a whole bit of silence?
+create a new string that spaces out userinputed string || style a user typing box 
+
+
+I think there are a few proposals I have.
+1. Dadeuce: the fern
+2. Who they know (contact list with null or broken values)
+3. bomb = 2x3( hp-1, 2 turn)
+4. l/r + u/d (hp-1, 2 turn)
+5. critical strike (hp-2, 1 turn)
+6. flipcolor as function of "mode" (who.name/pic, where.grid, what.hands, where.wants)
+7. hit? (y/n)
+8. please read aloud: "         " (miccheck(?))
+https://ulistentome.wordpress.com/2014/10/24/recording-mp3-using-only-html5-and-javascript-recordmp3-js/
+9.  

@@ -1,7 +1,7 @@
 // export default
 const heroesArr = [
   {
-    "id" : 1,
+    "id" : "hero-1",
     "name" : "Mr Guy",
     "hp" : 100,
     "dmg" : 20,
@@ -13,7 +13,7 @@ const heroesArr = [
     
   },
   {
-    "id" : 2,
+    "id" : "hero-2",
     "name" : "Dungeon Dame",
     "hp" : 69,
     "dmg" : 34,
@@ -24,7 +24,7 @@ const heroesArr = [
     "bonus" : "damageBoost"
   },
   {
-    "id" : 3,
+    "id" : "hero-3",
     "name" : "Mrs Guy",
     "hp" : 120,
     "dmg" : 12,
@@ -36,7 +36,7 @@ const heroesArr = [
     "bonus" : "healBoost"
   },
   {
-    "id" : 4,
+    "id" : "hero-4",
     "name" : "ghost of grammar",
     "hp" : 22,
     "dmg" : 110,

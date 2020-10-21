@@ -1,5 +1,6 @@
 const gearArr = [
   {
+    "id" : "gear-1",
     "name" : "Shield",
     "img" : "./images/shield.png",
     // note i changed hp to maxhp
@@ -9,6 +10,7 @@ const gearArr = [
     "cost" : 1
   },
   {
+    "id" : "gear-2",
     "name" : "Sword",
     "img" : "./images/sword.png",
     "effect" : [["dmg", "* 2"]],
@@ -16,6 +18,7 @@ const gearArr = [
     "cost" : 1
   },
   {
+    "id" : "gear-3",
     "name" : "Nothingness",
     "img" : "./images/blank.png",
     "effect" : [["draw", "+ 1"]],
@@ -23,6 +26,7 @@ const gearArr = [
     "cost" : 2
   },
   {
+    "id" : "gear-4",
     "name" : "Somethingness",
     "img" : "./images/somethingness.png",
     // double all current element cards, lose a turn
@@ -31,6 +35,7 @@ const gearArr = [
     "cost" : 2
   },
   {
+    "id" : "gear-5",
     "name" : "Nice",
     "img" : "./images/nice.png",
     "effect" : [["dmg", "* 0.69"]],
