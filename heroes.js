@@ -37,7 +37,7 @@ const heroesArr = [
   },
   {
     "id" : "hero-4",
-    "name" : "ghost of grammar",
+    "name" : "Gramma Snipe",
     "hp" : 22,
     "dmg" : 110,
     "cost" : {

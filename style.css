@@ -45,6 +45,15 @@
   margin: 9px;
 }
 
+/* changes the color, puts it bottom right */
+.palette{
+  /* position: ; */
+  float: right, top
+}
+/* have you heard of this? */
+.clearfix {
+  overflow: auto;
+}
 
 .toggleDrawerBtn{
   padding: 5px 10px;

@@ -45,5 +45,20 @@ const npcArr = [
       "element" : "air"
     },
     "bonus" : "questionTime"
+  },
+  {
+    "id" : "npc-5",
+    "name" : "jerk dragon",
+    "hp" : 420,
+    "dmg" : 69,
+    "loot" : {
+      "qty" : 3,
+      "element" : "gold"
+    },
+    "bonus" : "bodyPart"
   }
+  // dragon what do these cards need status?  like awareness modalities?
+  //      or better yet, we can build scry.
+  // shop girl, she is a fun guy works at bit buy got lost on her way to find supplies.  low hp low dmg, 33% chance gives a free gear
+  
 ]

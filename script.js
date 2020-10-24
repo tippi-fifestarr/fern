@@ -101,9 +101,12 @@ function displayDeck(deck){
     const cardEl = document.createElement('div')
     cardEl.classList.add(`card`)
     cardEl.classList.add(`flipped`)
+    cardEl.classList.add(`clearfix`)
     cardEl.innerHTML = `
       <h1>${card.name}</h1>
       <i class="zoom-icon zoom-icon-${card.id} fas fa-search"></i>
+      <p>${card.detail} and <br> ${card.link}</p>
+      <h2 class="palette"><i class="fas fa-palette"></i></h2>
     `
     cardEl.onclick = function(){
       cardEl.classList.remove(`flipped`)
@@ -122,13 +125,16 @@ function displayDeck(deck){
 function buildDeck(){
   // takes heroes, elements, gear, and npc and shuffles them into a stack placed in dadeck
   const deck = []
-  gearArr.map(el =>{
-    deck.push(el)
-  })
-  elementsArr.map(el =>{
-    deck.push(el)
-  })
-  npcArr.map(el =>{
+  // gearArr.map(el =>{
+  //   deck.push(el)
+  // })
+  // elementsArr.map(el =>{
+  //   deck.push(el)
+  // })
+  // npcArr.map(el =>{
+  //   deck.push(el)
+  // })
+  webDevArr.map(el =>{
     deck.push(el)
   })
   heroesArr.map(el =>{

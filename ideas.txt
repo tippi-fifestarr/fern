@@ -22,6 +22,7 @@ i m m u t a b l e: missions (0)
 0-null: a whole bit of silence?
 create a new string that spaces out userinputed string || style a user typing box 
 
+https://youtu.be/4IrUAqYKjIA?t=3495
 
 I think there are a few proposals I have.
 1. Dadeuce: the fern
@@ -34,3 +35,15 @@ I think there are a few proposals I have.
 8. please read aloud: "         " (miccheck(?))
 https://ulistentome.wordpress.com/2014/10/24/recording-mp3-using-only-html5-and-javascript-recordmp3-js/
 9.  
+
+
+magic tips for mutation deck
+ideal start hand: mirror shield (draw octopus/fast frog) + several mutations unstoppable
+
+how about if you die, your character card stays there with all your gear
+so you return to hero choose (-1 hero) different and go get it back!
+
+the card flipped text, color toggle?
+or better yet a flipped and marked.
+
+or only one card can be flipped over at a time? (fog of war!)

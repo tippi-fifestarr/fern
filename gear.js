@@ -41,5 +41,28 @@ const gearArr = [
     "effect" : [["dmg", "* 0.69"]],
     // nice, all enemy dmg down
     "description" : "Nice to meet you! :) enemy damage down"
+  },
+  {
+    "id" : "gear-6",
+    "name" : "Key",
+    "img" : "./images/key.png",
+    "effect" : [["lock", "- 1"]],
+    // security theme
+    "description" : "this removes a lock (to exit level)"
+  },
+  {
+    "id" : "gear-7",
+    "name" : "Locked",
+    "img" : "<i class=\"fab fa-keycdn\"></i>",
+    "effect" : [["level", "+ 1"]],
+    // level complete
+    "description" : "this removes a lock (to exit level)"
+  },
+  {
+    "id" : "gear-8",
+    "name" : "Stunbum",
+    "img" : "./gif/squat.gif",
+    "effect" : [["turn", "+1"]],
+    "description" : "stunning bum gives you turns +1"
   }
 ]
