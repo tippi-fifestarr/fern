@@ -8,6 +8,25 @@
 }
 /* animate an effect when the new data goes in header, move the title and otherthing. */
 
+.mini {
+  /*  */
+  /* https://www.w3schools.com/howto/howto_css_responsive_header.asp */
+  /* uch */
+}
+
+#miniheader {
+  background-color: #f1f1f1; /* Grey background */
+  padding: 50px 10px; /* Some padding */
+  color: black;
+  text-align: center; /* Centered text */
+  font-size: 90px; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}
+
 .hero-select-cards-container{
   display: flex;
   justify-content: center;
@@ -19,7 +38,17 @@
   border: 1px solid black;
   width: 200px;
 }
-
+.topic-select-cards-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.topic-card{
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+  width: 200px;
+}
 .image-box{
   width: 100px;
 }

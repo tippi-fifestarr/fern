@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/91bcd11295.js" crossorigin="anonymous"></script>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Twinvote.TV</title>
+  <meta name='viewport' content='width=device-width, initial-scale=.96'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../style.css'>
+</head>
+<body>
+  <div class="mini header">
+    <h1>TV <i class="fas fa-thumbs-down"></i></h1>
+    <p>view then vote thumbs down, ?, comment, share.</p>
+  </div>
+
+  <div id="start" class="scene start">
+    <h2>Welcome to the V0.0 of the Magic Party Website!</h2>
+    <p>Press the button to start now, wizard!</p>
+    <button onclick="handleStartBtn()">START NOW!</button>
+  </div>
+
+  <div id="topic-select" class="scene topic-select hide">
+    <h2>topic selecta</h2>
+    <div class="topic-select-cards-container">
+      <!-- place topic cards in here -->
+    </div>
+    <button onclick="handleTopicSelectBtn()">Are you suresies?</button>
+  </div>
+
+  <div id="playing-board" class="scene playing-board hide">
+    <div class="table-container">
+      <div class="hero-container">
+        <div class="image-box">
+          <img src="../DaDeuce/images/dalogo.jpg" alt="DaDeuce">
+        </div>
+        <div class="attributes-box">
+          <p class="hero-name"></p>
+          <p class="hero-hp"></p>
+          <p class="hero-dmg"></p>
+          <p class="hero-cost"></p>
+          <p class="hero-cost-qty"></p>
+          <p class="hero-bonus"></p>
+        </div>
+        .loot
+      </div>
+      <div class="cards-grid-container">
+        <div class="dadeck">
+          <!-- this is where the shuffled cards are waiting to be dealt -->
+        </div>
+        <div class="card-grid">
+          <!-- cards dynamically placed in here, face down -->
+        </div>
+      </div>
+    </div>
+    <div class="drawer-container drawer-container-closed">
+      <button class="toggleDrawerBtn"><i class="fas fa-comments"></i>open</button>
+      <!-- items, dialogue, questions for player will be dynamically placed here -->
+      <i class="fas fa-search"></i><i class="fas fa-search-dollar"></i>
+    </div>
+  </div>
+  <script src="topics.js"></script>
+  <script src="tv.js"></script>
+</body>
+</html>
+<!-- 
+
+twin vote: TV (1v1v(1)?)
+how many teams?
+${username}?
+
+
+private feedback
+public testimonial "      "-${username} -->

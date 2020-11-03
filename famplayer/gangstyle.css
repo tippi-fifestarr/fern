@@ -1,0 +1,42 @@
+.header {
+    background-color: rgb(180, 184, 180);
+    padding: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 969
+    /* flex-direction: column-reverse; */
+}
+/* .navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 969;
+     
+    } */
+.hero-div{
+    background-color: rgb(69, 79, 196);
+    padding: 10px;
+    /* text-align: center; */
+    /* display: ; */
+    /* 
+     */
+}
+/* how do i make the text centered on a specific word (or icon) */
+/* https://flexboxfroggy.com/ */
+.center{
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+.tooltip{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    border-radius: 14px;
+    transition: all .25s ease;
+    
+}
