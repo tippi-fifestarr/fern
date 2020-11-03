@@ -1,3 +1,5 @@
+// https://freshman.tech/todo-list/ tutorial
+
 // This is the array that will hold the todo list items
 let todoItems = [];
 
